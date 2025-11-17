@@ -1,6 +1,6 @@
 import { Resend } from 'resend';
 import process from 'node:process';
-import { logEmailSend } from './db.ts';
+import { logEmailSend } from './db';
 
 // Lazy initialization to avoid errors if API key is not set
 function getResendClient() {
