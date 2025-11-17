@@ -159,7 +159,7 @@ export default function StudioDetailPage() {
                 </span>
                 <input
                   className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-                  value={form.name}
+                  value={form.name || ''}
                   onChange={(e) =>
                     setForm((f) => ({ ...f, name: e.target.value }))
                   }
@@ -171,7 +171,7 @@ export default function StudioDetailPage() {
                 </span>
                 <input
                   className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-                  value={form.room_number}
+                  value={form.room_number || ''}
                   onChange={(e) =>
                     setForm((f) => ({ ...f, room_number: e.target.value }))
                   }
@@ -183,7 +183,7 @@ export default function StudioDetailPage() {
                 </span>
                 <textarea
                   className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-                  value={form.notes}
+                  value={form.notes || ''}
                   onChange={(e) =>
                     setForm((f) => ({ ...f, notes: e.target.value }))
                   }

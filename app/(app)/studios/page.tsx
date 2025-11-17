@@ -149,7 +149,7 @@ export default function StudiosPage() {
             <span className="block text-zinc-700 dark:text-zinc-300">Name</span>
             <input
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.name}
+              value={form.name || ''}
               onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
               required
             />
@@ -160,7 +160,7 @@ export default function StudiosPage() {
             </span>
             <input
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.address}
+              value={form.address || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, address: e.target.value }))
               }
@@ -173,7 +173,7 @@ export default function StudiosPage() {
             <input
               type="time"
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.am_start_time}
+              value={form.am_start_time || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, am_start_time: e.target.value }))
               }
@@ -186,7 +186,7 @@ export default function StudiosPage() {
             <input
               type="time"
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.am_end_time}
+              value={form.am_end_time || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, am_end_time: e.target.value }))
               }
@@ -199,7 +199,7 @@ export default function StudiosPage() {
             <input
               type="time"
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.pm_start_time}
+              value={form.pm_start_time || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, pm_start_time: e.target.value }))
               }
@@ -212,7 +212,7 @@ export default function StudiosPage() {
             <input
               type="time"
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.pm_end_time}
+              value={form.pm_end_time || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, pm_end_time: e.target.value }))
               }
@@ -224,7 +224,7 @@ export default function StudiosPage() {
             </span>
             <textarea
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.notes}
+              value={form.notes || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, notes: e.target.value }))
               }

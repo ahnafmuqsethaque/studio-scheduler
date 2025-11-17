@@ -126,7 +126,7 @@ export default function DirectorsPage() {
             <span className="block text-zinc-700 dark:text-zinc-300">Name</span>
             <input
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.name}
+              value={form.name || ''}
               onChange={(e) => setForm((f) => ({ ...f, name: e.target.value }))}
               required
             />
@@ -138,7 +138,7 @@ export default function DirectorsPage() {
             <input
               type="email"
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.email}
+              value={form.email || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, email: e.target.value }))
               }
@@ -151,7 +151,7 @@ export default function DirectorsPage() {
             <input
               type="tel"
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.phone}
+              value={form.phone || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, phone: e.target.value }))
               }
@@ -163,7 +163,7 @@ export default function DirectorsPage() {
             </span>
             <textarea
               className="mt-1 w-full rounded-md border border-zinc-300 dark:border-zinc-700 bg-white dark:bg-zinc-950 px-3 py-2"
-              value={form.notes}
+              value={form.notes || ''}
               onChange={(e) =>
                 setForm((f) => ({ ...f, notes: e.target.value }))
               }
