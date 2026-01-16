@@ -304,44 +304,45 @@ export default function SendEmailsPage() {
 Congratulations again! We're confirming your upcoming recording session on ${dateInfo.dayOfWeek}, ${dateInfo.month} ${dateInfo.day}${dateInfo.daySuffix} at ${timeDisplay || '[Shift Start Time] - [Shift End time]'}.
 
 Location: ${shift.studio.name}
+${shift.studio.address || '[Studio Address]'}
 
-𖡡 ${shift.studio.address || '[Studio Address]'}
+Our payment provider is Dots (https://dots.dev/). As mentioned, we will explain the payment process after your session is completed. Do not sign up on the platform until we explain the payment process after project completion (Feb 28).
 
-Once you arrive: ${shift.studio.notes || ''}
+[ Dress code ]
+- Please avoid wearing green clothings
+- Tie loose hair back
+- Take off loose coats / especially leather jackets
+- ⁠Remove dangly accessories such as earrings, bracelets and analog watches that tick
+- Any accessibility devices that produce sound brought into the studio should be discussed prior to best accommodate you
+- Wear contact lens if possible, as spectacles will cause interference with ear muffs.
+- We may call approx. 20 mins before our session to confirm your attendance. 
 
-Our payment provider is Dots (https://dots.dev/). As mentioned, we will explain the payment process after your session is completed. Do not sign up on the platform until we explain the payment process after project completion (Nov 30).
+On the day of your session:
+
+- Please arrive 15 minutes early to check in (${startTimeMinutes || '[Shift start time minus 15 minutes]'}).
+- Stay hydrated and well rested.
+- Contact ${shift.director.name} at ${shift.director.phone || '7786819306'} once you've arrive to be let in.
 
 Things to keep in mind for your recording session tomorrow:
 
 BRING YOUR EARBUDS!
-• Please arrive on time - account for traffic!
-• Work with your director, follow their lead and please co-operate with them. Your performance will be evaluated by our team.
-• Turn off your phone while in session, vibrations on silent mode are not okay
-• Tie loose hair back
-• Take off loose coats / especially leather jackets
-• ⁠Remove dangly accessories such as earrings, bracelets and analog watches that tick
-• Any accessibility devices that produce sound brought into the studio should be discussed prior to best accommodate you
-• DRINK WATER often to prevent sticky mouth 
-• Wear contact lens if possible, as spectacles may cause interference with ear muffs
-
-On the day of your session:
-
-- Please arrive 15 minutes early to check in ${startTimeMinutes || '[Shift start time minus 15 minutes]'}.
-- Stay hydrated and well rested.
-- Please bring an iPad or laptop to make script reading more comfortable, if you wish.
-- Contact ${shift.director.name} at ${shift.director.phone || "[Director's Phone number]"} when you arrive
--  We will call approx. 20 mins before our session to confirm your attendance.
+- Please arrive on time - account for traffic!
+- Work with your director, follow their lead and please co-operate with them. Your performance will be evaluated by our team.
+- Turn off your phone while in session, vibrations on silent mode are NOT okay
+- DRINK WATER often to prevent sticky mouth 
 
 ADDITIONAL NOTES:
 
 We will be auditing our recording sessions. Sessions would be booked one at a time and quality will be verified before we book more sessions with you. Keep in mind for artists we have rebooked, our team reserves the right to defer your future bookings based on performance feedback. 
 
-Lunch and snacks will be provided, as promised, but keep in mind that meals were not stipulated by the contract. We will try to accommodate everyone's dietary restrictions, but please don't expect perfect meals. If you have concerns, feel free to bring your own lunch.
+Lunch and snacks will be provided, but keep in mind that meals were not stipulated by the contract. We will try to accommodate everyone's dietary restrictions, but please don't expect perfect meals. If you have concerns, feel free to bring your own lunch.
+
+Note: To clarify, the project title "Gametime" is only an internal working title. It has no connection to the production of any video game. Furthermore, this project is a non-union project, it does not fall under union jurisdiction.
+
 
 We're looking forward to working with you!
 
 Regards,
-
 Mundo AI Team`;
 
     setEmailForm({ to, bcc, subject, body });
