@@ -321,7 +321,7 @@ On the day of your session:
 
 - Please arrive 15 minutes early to check in (${startTimeMinutes || '[Shift start time minus 15 minutes]'}).
 - Stay hydrated and well rested.
-- Contact ${shift.director.name} at ${shift.director.phone || '7786819306'} once you've arrive to be let in.
+- Contact ${shift.director.name} at ${shift.director.phone || '778-681-9306'} once you've arrive to be let in.
 
 Things to keep in mind for your recording session tomorrow:
 
