@@ -932,7 +932,7 @@ export default function SchedulePage() {
                           className="px-3 py-2 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 cursor-pointer bg-zinc-50 dark:bg-zinc-900"
                           onClick={() => handleSlotClick(room.id, 'am')}
                         >
-                          {amVA1?.code || (amVA1 ? amVA1.id.slice(0, 8) : '-')}
+                          {amVA1?.code || (amVA1 ? String(amVA1.id).slice(0, 8) : '-')}
                         </td>
                         <td
                           className="px-3 py-2 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 cursor-pointer bg-zinc-50 dark:bg-zinc-900"
@@ -965,7 +965,7 @@ export default function SchedulePage() {
                           className="px-3 py-2 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 cursor-pointer bg-zinc-50 dark:bg-zinc-900"
                           onClick={() => handleSlotClick(room.id, 'pm')}
                         >
-                          {pmVA1?.code || (pmVA1 ? pmVA1.id.slice(0, 8) : '-')}
+                          {pmVA1?.code || (pmVA1 ? String(pmVA1.id).slice(0, 8) : '-')}
                         </td>
                         <td
                           className="px-3 py-2 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 cursor-pointer bg-zinc-50 dark:bg-zinc-900"
@@ -1010,7 +1010,7 @@ export default function SchedulePage() {
                           className="px-3 py-2 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 cursor-pointer"
                           onClick={() => handleSlotClick(room.id, 'am')}
                         >
-                          {amVA2?.code || (amVA2 ? amVA2.id.slice(0, 8) : '-')}
+                          {amVA2?.code || (amVA2 ? String(amVA2.id).slice(0, 8) : '-')}
                         </td>
                         <td
                           className="px-3 py-2 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 cursor-pointer"
@@ -1043,7 +1043,7 @@ export default function SchedulePage() {
                           className="px-3 py-2 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 cursor-pointer"
                           onClick={() => handleSlotClick(room.id, 'pm')}
                         >
-                          {pmVA2?.code || (pmVA2 ? pmVA2.id.slice(0, 8) : '-')}
+                          {pmVA2?.code || (pmVA2 ? String(pmVA2.id).slice(0, 8) : '-')}
                         </td>
                         <td
                           className="px-3 py-2 border-r border-zinc-200 dark:border-zinc-800 hover:bg-zinc-50 dark:hover:bg-zinc-900 cursor-pointer"
